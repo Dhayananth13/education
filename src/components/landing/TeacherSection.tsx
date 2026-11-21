@@ -40,9 +40,7 @@ export function TeacherSection({ onOpenApp }: TeacherSectionProps) {
                   className="w-5 h-5 text-[#24666B] dark:text-[#D4F36B] shrink-0 mt-0.5"
                   aria-hidden="true"
                 />
-                <span>
-                  Students × topics mastery heatmap with one-click CSV export
-                </span>
+                <span>Students × topics mastery heatmap with one-click CSV export</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <CheckCircle2

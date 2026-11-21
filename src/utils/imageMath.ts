@@ -1,4 +1,7 @@
-import { JPEG_COMPRESSION_QUALITY, MAX_IMAGE_LONGEST_SIDE } from '../../shared/config.ts';
+import {
+  JPEG_COMPRESSION_QUALITY,
+  MAX_IMAGE_LONGEST_SIDE,
+} from '../../shared/config.ts';
 
 export { JPEG_COMPRESSION_QUALITY, MAX_IMAGE_LONGEST_SIDE };
 

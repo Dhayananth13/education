@@ -140,8 +140,8 @@ describe('Newly split components, routing & landing stat chips', () => {
     await user.click(openAppButtons[0]);
     expect(onOpenApp).toHaveBeenCalledWith('tutor');
 
-    expect(screen.getByText('Socratic, never spoilers')).toBeInTheDocument();
-    expect(screen.getByText('Built for real Indian classrooms')).toBeInTheDocument();
+    expect(screen.getByText('Socratic Tutoring')).toBeInTheDocument();
+    expect(screen.getByText('Photo Homework Help')).toBeInTheDocument();
   });
 
   it('HintLadder triggers hint requests and disables once all 3 hints are used', async () => {
@@ -197,7 +197,7 @@ describe('Newly split components, routing & landing stat chips', () => {
     );
 
     expect(screen.getAllByText(/Rohan Verma/).length).toBeGreaterThanOrEqual(1);
-    await user.click(screen.getByRole('button', { name: /Draft 15-min plan/i }));
+    await user.click(screen.getByRole('button', { name: /Draft intervention plan/i }));
     expect(onDraftIntervention).toHaveBeenCalledWith(
       expect.stringContaining('Rohan Verma')
     );
@@ -247,9 +247,7 @@ describe('Newly split components, routing & landing stat chips', () => {
     await user.click(
       screen.getByRole('button', { name: 'Close student interactions panel' })
     );
-    expect(
-      screen.queryByText(/Student Recent Interactions/i)
-    ).not.toBeInTheDocument();
+    expect(screen.queryByText(/Student Recent Interactions/i)).not.toBeInTheDocument();
   });
 
   it('TeacherChat triggers print sheet preview, templates, submit, and reset cleanly', async () => {
@@ -298,7 +296,9 @@ describe('Newly split components, routing & landing stat chips', () => {
     await user.click(screen.getByRole('button', { name: 'Send teacher request' }));
     expect(onSubmit).toHaveBeenCalledTimes(1);
 
-    await user.click(screen.getByRole('button', { name: /New Plan/i }));
+    await user.click(
+      screen.getByRole('button', { name: 'Reset teacher aide session' })
+    );
     expect(onResetChat).toHaveBeenCalledTimes(1);
   });
 
@@ -310,10 +310,7 @@ describe('Newly split components, routing & landing stat chips', () => {
           progressLogs={seed.progressLogs}
           dropoutAlerts={seed.dropoutAlerts}
         />
-        <ProgressHeatmapCard
-          heatmap={{ topics: [], rows: [] }}
-          onExportCsv={vi.fn()}
-        />
+        <ProgressHeatmapCard heatmap={{ topics: [], rows: [] }} onExportCsv={vi.fn()} />
         <ProgressLogTable
           filter="All"
           onChangeFilter={vi.fn()}

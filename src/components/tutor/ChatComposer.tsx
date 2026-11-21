@@ -10,10 +10,7 @@ import {
 } from 'lucide-react';
 import { MAX_MESSAGE_CHARS, SPEECH_LANGUAGE_OPTIONS } from '../../../shared/config';
 import type { SpeechLanguageCode } from '../../../shared/types';
-import {
-  type EncodedImageAttachment,
-  formatByteSize,
-} from '../../utils/imageHelper';
+import { type EncodedImageAttachment, formatByteSize } from '../../utils/imageHelper';
 
 const QUICK_STUDENT_PROMPTS = [
   {

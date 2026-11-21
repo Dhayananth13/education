@@ -1,8 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import {
-  TEACHER_ACCESS_HEADER,
-  TEACHER_CODE_STORAGE_KEY,
-} from '../../shared/config';
+import { TEACHER_ACCESS_HEADER, TEACHER_CODE_STORAGE_KEY } from '../../shared/config';
 import { mergeDropoutAlerts } from '../../shared/shikshaLogic';
 import type {
   AppTab,

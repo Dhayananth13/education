@@ -90,12 +90,14 @@ const LIGHT_THEME_CONTRAST_PAIRS: ContrastPair[] = [
     bg: '#E5E7EB',
   },
   {
-    label: 'Landing hero stat chip white text over rgba(18,59,62,0.85) on white (#35585B)',
+    label:
+      'Landing hero stat chip white text over rgba(18,59,62,0.85) on white (#35585B)',
     fg: '#FFFFFF',
     bg: '#35585B',
   },
   {
-    label: 'Landing hero stat chip muted label (#E2F1F2) over rgba(18,59,62,0.85) on white (#35585B)',
+    label:
+      'Landing hero stat chip muted label (#E2F1F2) over rgba(18,59,62,0.85) on white (#35585B)',
     fg: '#E2F1F2',
     bg: '#35585B',
   },

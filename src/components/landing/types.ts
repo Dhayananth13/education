@@ -1,9 +1,5 @@
 export type NavSectionId =
-  | 'home'
-  | 'for-students'
-  | 'for-teachers'
-  | 'how-it-works'
-  | 'contact';
+  'home' | 'for-students' | 'for-teachers' | 'how-it-works' | 'contact';
 
 export const LANDING_NAV_LINKS: ReadonlyArray<{
   id: NavSectionId;

@@ -1,9 +1,4 @@
-import {
-  BellRing,
-  Camera,
-  FileSpreadsheet,
-  MessageCircleQuestion,
-} from 'lucide-react';
+import { BellRing, Camera, FileSpreadsheet, MessageCircleQuestion } from 'lucide-react';
 
 const FEATURE_CARDS = [
   {

@@ -1,11 +1,5 @@
 import { memo, useMemo } from 'react';
-import {
-  AlertCircle,
-  Award,
-  CheckCircle2,
-  Clock,
-  TrendingUp,
-} from 'lucide-react';
+import { AlertCircle, Award, CheckCircle2, Clock, TrendingUp } from 'lucide-react';
 import { computeStudentSummary } from '../../../shared/shikshaLogic';
 import type { ProgressLog, PublicStudentProfile } from '../../../shared/types';
 

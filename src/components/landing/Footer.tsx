@@ -35,7 +35,10 @@ export function Footer({ onSelectNav, onOpenApp }: FooterProps) {
             </p>
           </div>
 
-          <nav aria-label="Footer navigation" className="flex flex-wrap gap-x-6 gap-y-2">
+          <nav
+            aria-label="Footer navigation"
+            className="flex flex-wrap gap-x-6 gap-y-2"
+          >
             {LANDING_NAV_LINKS.slice(0, 4).map((item) => (
               <a
                 key={item.id}

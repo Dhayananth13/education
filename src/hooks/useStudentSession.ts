@@ -62,7 +62,8 @@ export function useStudentSession(
   }, []);
 
   const getCachedStudentSession = useCallback(
-    (studentId: string) => studentSessionsRef.current.get(studentId) ?? studentSessionId,
+    (studentId: string) =>
+      studentSessionsRef.current.get(studentId) ?? studentSessionId,
     [studentSessionId]
   );
 

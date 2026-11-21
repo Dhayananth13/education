@@ -8,12 +8,7 @@ import {
   MAX_TOPIC_CHARS,
   VALID_COMPETENCY_LEVELS,
 } from './config.ts';
-import type {
-  CompetencyLevel,
-  DropoutAlert,
-  HintLevel,
-  ProgressLog,
-} from './types.ts';
+import type { CompetencyLevel, DropoutAlert, HintLevel, ProgressLog } from './types.ts';
 
 export {
   MAX_GEMINI_MESSAGES,

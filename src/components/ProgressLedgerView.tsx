@@ -1,9 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import { LogOut } from 'lucide-react';
-import {
-  buildClassHeatmap,
-  exportHeatmapToCsv,
-} from '../../shared/educationLogic';
+import { buildClassHeatmap, exportHeatmapToCsv } from '../../shared/educationLogic';
 import { filterProgressLogs } from '../../shared/shikshaLogic';
 import type {
   CompetencyLevel,

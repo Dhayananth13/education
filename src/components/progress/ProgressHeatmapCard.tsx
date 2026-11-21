@@ -1,11 +1,5 @@
 import { memo } from 'react';
-import {
-  AlertCircle,
-  CheckCircle2,
-  Clock,
-  Download,
-  Minus,
-} from 'lucide-react';
+import { AlertCircle, CheckCircle2, Clock, Download, Minus } from 'lucide-react';
 import type { ClassHeatmapData, HeatmapCell } from '../../../shared/types';
 
 const HeatmapStatusCell = memo(function HeatmapStatusCell({
@@ -98,11 +92,7 @@ export function ProgressHeatmapCard({
                   Student
                 </th>
                 {heatmap.topics.map((col) => (
-                  <th
-                    key={col.key}
-                    scope="col"
-                    className="py-3 px-4 whitespace-nowrap"
-                  >
+                  <th key={col.key} scope="col" className="py-3 px-4 whitespace-nowrap">
                     <span className="block font-semibold text-[#1A1C1E] dark:text-[#E2E2E9]">
                       {col.topic}
                     </span>

@@ -1,10 +1,7 @@
 import { memo, useEffect, useMemo, useRef } from 'react';
 import { AlertTriangle, Award, CheckCircle2, Loader2 } from 'lucide-react';
 import type { ChatMessage, PublicStudentProfile } from '../../../shared/types';
-import {
-  detectMessageLanguage,
-  prefersReducedMotion,
-} from '../../utils/accessibility';
+import { detectMessageLanguage, prefersReducedMotion } from '../../utils/accessibility';
 import { MarkdownText } from '../MarkdownText';
 import { HintLadder } from './HintLadder';
 

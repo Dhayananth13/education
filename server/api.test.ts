@@ -205,7 +205,9 @@ describe('Shiksha-Agent Express API (supertest + mocked Gemini)', () => {
           messages: [{ role: 'user', text: 'Trying another student session' }],
         });
       expect(chatMismatch.status).toBe(403);
-      expect(chatMismatch.body.error).toMatch(/does not belong to the requested student/i);
+      expect(chatMismatch.body.error).toMatch(
+        /does not belong to the requested student/i
+      );
     } finally {
       await harness.cleanup();
     }

@@ -10,14 +10,8 @@ import {
 } from 'lucide-react';
 import { WELCOME_MESSAGE_IDS } from '../../../shared/config';
 import type { ChatMessage } from '../../../shared/types';
-import {
-  detectMessageLanguage,
-  prefersReducedMotion,
-} from '../../utils/accessibility';
-import {
-  type EncodedImageAttachment,
-  formatByteSize,
-} from '../../utils/imageHelper';
+import { detectMessageLanguage, prefersReducedMotion } from '../../utils/accessibility';
+import { type EncodedImageAttachment, formatByteSize } from '../../utils/imageHelper';
 import { MarkdownText } from '../MarkdownText';
 
 const TEACHER_TEMPLATES = [

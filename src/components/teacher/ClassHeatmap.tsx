@@ -8,10 +8,7 @@ import {
   Minus,
   Sparkles,
 } from 'lucide-react';
-import {
-  buildClassHeatmap,
-  exportHeatmapToCsv,
-} from '../../../shared/educationLogic';
+import { buildClassHeatmap, exportHeatmapToCsv } from '../../../shared/educationLogic';
 import type {
   DropoutAlert,
   ProgressLog,
